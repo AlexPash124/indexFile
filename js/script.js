@@ -1,15 +1,18 @@
 "use strict";
+const nymberOfFilm = +prompt('Скільки фільмів Ви передивилися?', '');
 
-let arr=['pl.png', 'orange', '3', 66];
-//alert(arr[3]);
-//const result=confirm("you still here?");
-//alert(result);
+const personlMovieDB={
+    count: nymberOfFilm,
+    movies:{},
+    actors:{},
+    gernes:[],
+    private: false
+};
+const a=prompt('Один із останніх фільмів?',''),
+      b= prompt('На скільки Ви його оцінюєте?','10'),
+      c=prompt('Один із останніх фільмів?',''),
+      d=prompt('На скільки Ви його оцінюєте?','10');
 
-// const answer=+prompt("Вам є 18 років?", "18");
-// alert(answer+10);
-const answers=[];
-answers[0]=prompt('You name?','');
-answers[1]=prompt('You family?','');
-answers[3]=prompt('You years?','');
+personlMovieDB.movies[a]=b;
 
-console.log(typeof(answers));
+console.log(personlMovieDB);
